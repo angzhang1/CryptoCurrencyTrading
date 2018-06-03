@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <item name="android:buttonBarButtonStyle">@style/Widget.MyError.BarButtonStyle</item>
+    </style>
+
+    <style name="DialogWindowTitle" parent="@style/Base.DialogWindowTitle.AppCompat">
+        <item name="android:textAppearance">@style/TextAppearance.DialogWindowTitle</item>
+    </style>
+
+    <style name="TextAppearance.DialogWindowTitle" parent="@android:style/TextAppearance.Material.DialogWindowTitle">
+        <item name="android:textColor">#F93324</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.MyError.BarButtonStyle" parent="@android:style/Widget.Material.Button.Borderless">
+        <item name="android:textColor">#F28500</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="auth_time">
+        <item>After 1 minute</item>
+        <item>After 5 minutes</item>
+        <item>After 15 minutes</item>
+        <item>After 1 hour</item>
+        <item>After 4 hours</item>
+    </string-array>
+</resources>
