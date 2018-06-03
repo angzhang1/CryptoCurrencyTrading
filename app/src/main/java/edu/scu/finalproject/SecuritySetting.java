@@ -9,12 +9,14 @@ public class SecuritySetting extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.security_setting);
+        setContentView(R.layout.activity_security_setting);
 
         Toolbar myToolbar = findViewById(R.id.security_setting_toolbar);
         setSupportActionBar(myToolbar);
 
         ActionBar bar = getSupportActionBar();
-        bar.setDisplayHomeAsUpEnabled(true);
+        if (bar != null) {
+            bar.setDisplayHomeAsUpEnabled(true);
+        }
     }
 }

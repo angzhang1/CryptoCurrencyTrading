@@ -15,7 +15,7 @@ public class RequireAuthentication extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.require_authentication);
+        setContentView(R.layout.activity_require_authentication);
 
         String[] auth_settings_array = getResources().getStringArray(
                 R.array.auth_time);
@@ -24,7 +24,9 @@ public class RequireAuthentication extends AppCompatActivity {
         setSupportActionBar(myToolbar);
 
         ActionBar bar = getSupportActionBar();
-        bar.setDisplayHomeAsUpEnabled(true);
+        if (bar != null) {
+            bar.setDisplayHomeAsUpEnabled(true);
+        }
 
         ListView auth_times = findViewById(R.id.auth_time_settings);
         auth_times.setChoiceMode(ListView.CHOICE_MODE_SINGLE);

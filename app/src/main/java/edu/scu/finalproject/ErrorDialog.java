@@ -3,7 +3,6 @@ package edu.scu.finalproject;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +12,7 @@ public class ErrorDialog extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.error_page);
+        setContentView(R.layout.activity_error_page);
     }
 
     public void error_alert(View view) {

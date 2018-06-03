@@ -4,8 +4,11 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class ChangeDefaultCard extends AppCompatActivity {
     private static final String[] cards = {"ending with 1111", "ending with 2222", "ending with 3333"};
@@ -29,5 +32,12 @@ public class ChangeDefaultCard extends AppCompatActivity {
         ArrayAdapter cards_adapter = new ArrayAdapter<>(this, R.layout.checked_credit_card_entry,
                 R.id.card_lv_item, cards);
         all_cards.setAdapter(cards_adapter);
+
+        all_cards.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(getBaseContext(),"Selected " + i, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }

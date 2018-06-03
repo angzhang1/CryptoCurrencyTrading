@@ -9,12 +9,14 @@ public class HistoryI extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.history_1);
+        setContentView(R.layout.activity_history_i);
 
         Toolbar myToolbar = findViewById(R.id.no_history_toolbar);
         setSupportActionBar(myToolbar);
 
         ActionBar bar = getSupportActionBar();
-        bar.setDisplayHomeAsUpEnabled(true);
+        if (bar != null) {
+            bar.setDisplayHomeAsUpEnabled(true);
+        }
     }
 }
