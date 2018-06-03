@@ -6,4 +6,5 @@
     <color name="colorBackground">#95D8F0</color>
     <color name="colorBarTitle">#F28500</color>
     <color name="colorBarBackground">#95DFFF</color>
+    <color name="colorCardBackground">#E2E2E2</color>
 </resources>
